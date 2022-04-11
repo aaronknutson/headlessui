@@ -1,30 +1,22 @@
+/* eslint-disable */
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <nav class="text-slate-800 text-center text-lg font-semibold">
+    <router-link active-class="active" to="/">Home</router-link> |
+    <router-link active-class="active" to="/dropdown">Dropdown</router-link> |
+    <router-link active-class="active" to="/dialog">Dialog</router-link> |
+    <router-link active-class="active" to="/radio">RadioGroup</router-link> |
+    <router-link active-class="active" to="/tabs">Tabs</router-link> |
+    <router-link active-class="active" to="/about">About</router-link>
   </nav>
-  <router-view />
+  <div class="container max-w-7xl mx-auto">
+    <div class="flex justify-center text-slate-800 text-center items-center">
+      <router-view />
+    </div>
+  </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.active {
+  @apply text-sky-500 underline font-bold text-xl;
 }
 </style>

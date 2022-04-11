@@ -1,11 +1,35 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import Dropdown from "../views/Dropdown.vue";
+import Dialog from "../views/Dialog.vue";
+import RadioGroup from "../views/RadioGroup.vue";
+import Tabs from "../views/Tabs.vue";
 
 const routes = [
   {
     path: "/",
     name: "home",
     component: HomeView,
+  },
+  {
+    path: "/dropdown",
+    name: "dropdown",
+    component: Dropdown,
+  },
+  {
+    path: "/dialog",
+    name: "dialog",
+    component: Dialog,
+  },
+  {
+    path: "/radio",
+    name: "radio",
+    component: RadioGroup,
+  },
+  {
+    path: "/tabs",
+    name: "tabs",
+    component: Tabs,
   },
   {
     path: "/about",

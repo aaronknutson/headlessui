@@ -1,18 +1,8 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <h1 class="text-3xl font-extrabold mt-10">
+      How to use Headless Ui components
+    </h1>
+    <p class="mt-4 text-xl font-bold">(With Code Snippets)</p>
   </div>
 </template>
-
-<script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
-export default {
-  name: "HomeView",
-  components: {
-    HelloWorld,
-  },
-};
-</script>
